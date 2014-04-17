@@ -15,8 +15,11 @@ This Javascript viewer repeatedly pulls JPEGs from the remote access website of 
 * Access to a GeoVision Surveillance DVR system with a mobile access page that supports JPEG
 * A webserver with PHP >=4.1 and libcurl >=7.10.5
 
+<h2>Installation</h2>
+* Copy the "cams.php" file to a supported server.
+
 <h2>Usage</h2>
-* Access the php page at whatever url it's installed at
+* Access the "cams.php" file at whatever url it's installed at
 * Enter the IP address of the camera system and your username and password to log in.
 * Pick which cameras you want to view.
 
