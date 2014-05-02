@@ -1,7 +1,7 @@
 geovision-multicamviewer
 ========================
 
-A simple Javascript viewer for GeoVision Surveillance DVR
+A simple Javascript viewer for GeoVision Surveillance DVR by [Steve Pasetti](stevepasetti.com)
 
 <h2>The problem</h2>
 GeoVision's DMMultiview.exe client only supports Windows.  Their remote access website does not work for most users (It claims to support MPEG and Quicktime, and I've gotten neither working on Windows or Mac.)
