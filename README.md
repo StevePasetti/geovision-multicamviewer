@@ -23,6 +23,11 @@ This Javascript viewer repeatedly pulls JPEGs from the remote access website of 
 * Enter the IP address of the camera system and your username and password to log in.
 * Pick which cameras you want to view.
 
+<h2>Limitations</h2>
+This only pulls images and displays them repeatedly for a video effect.  No sound, controls, or admin functions that the camera system may support.
+
 <h2>Advanced</h2>
 You can hardcode the camera IP, username and password im the script if you wish.  You can also edit the setInterval parameters to make it refresh faster or slower.
 
+<h2>License</h2>
+MIT License.
