@@ -86,10 +86,6 @@ foreach ($camindexmatches[1] as $val)
 <script type="text/javascript">
 var timers = {};
 
-function iframeload(loc)
-{
-  alert("Location: " + loc);
-}
 function toggleCam(camNumber)
 {
   var cam = document.getElementById("cam" + camNumber);
