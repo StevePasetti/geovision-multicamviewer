@@ -73,7 +73,7 @@ if ($err!="")
 if (isset($_POST["ip"]) && $err==="")
 { 
 foreach ($camindexmatches[1] as $val)
-  print("<button id=\"btn" . $val . "\" type=\"button\" onclick=\"toggleCam(" . $val . ")\">Camera " . ($val+1) . "</button> ");
+  print("<button style=\"background-color:#FFBABA;color:#D8000C;\" id=\"btn" . $val . "\" type=\"button\" onclick=\"toggleCam(" . $val . ", this)\">Camera " . ($val+1) . "</button> ");
 
 ?><br/><br/>
 <?php
@@ -86,7 +86,7 @@ foreach ($camindexmatches[1] as $val)
 <script type="text/javascript">
 var timers = {};
 
-function toggleCam(camNumber)
+function toggleCam(camNumber, btn)
 {
   var cam = document.getElementById("cam" + camNumber);
   if (cam.style.display === "none")
@@ -98,11 +98,15 @@ function toggleCam(camNumber)
        var ip = "<?php echo $_POST["ip"];?>";
        cam.src = "http://" + ip + "/" + guid + "_" + randomNo + "/cam" + camNumber + ".jpg";
      }, 500);
+     btn.style.backgroundColor="#DFF2BF";
+     btn.style.color="#4F8A10";
   }
   else
   {
      cam.style.display="none";
      clearInterval(timers["cam" + camNumber.toString()]);
+     btn.style.backgroundColor="#FFBABA";
+     btn.style.color="#D8000C";
   }
 }
 
